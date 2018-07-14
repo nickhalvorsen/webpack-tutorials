@@ -1,0 +1,28 @@
+{
+  "name": "webpack-tutorials",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickhalvorsen/webpack-tutorials.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickhalvorsen/webpack-tutorials/issues"
+  },
+  "homepage": "https://github.com/nickhalvorsen/webpack-tutorials#readme",
+  "devDependencies": {
+    "webpack": "^4.16.0",
+    "webpack-cli": "^3.0.8"
+  },
+  "dependencies": {
+    "lodash": "^4.17.10"
+  }
+}
