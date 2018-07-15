@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
+const WorkboxPlugin = require('workbox-webpack-plugin')
 
 module.exports = {
     entry: {
@@ -10,7 +11,13 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
-            title: 'Output Management'
+            title: 'Progressive Web Application'
+        }),
+        new WorkboxPlugin.GenerateSW({
+            // these options encourage the service workers to get in there fast
+            // and not allow any straggling "old" ones to hang around
+            clientsClaim: true,
+            skipWaiting: true
         })
     ],
     output: {
